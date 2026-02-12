@@ -1,0 +1,52 @@
+﻿
+> client@0.0.0 lint
+> eslint .
+
+
+C:\Users\PCCS\OneDrive\Desktop\ICT EXPO\car-rental-booking\client\src\context\AuthContext.jsx
+   7:14  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react-refresh/only-export-components
+  21:9   error  Error: Cannot access variable before it is declared
+
+`checkAuth` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  19 |
+  20 |     useEffect(() => {
+> 21 |         checkAuth();
+     |         ^^^^^^^^^ `checkAuth` accessed before it is declared
+  22 |     }, []);
+  23 |
+  24 |     const checkAuth = async () => {
+
+  22 |     }, []);
+  23 |
+> 24 |     const checkAuth = async () => {
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 25 |         const token = localStorage.getItem('token');
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 26 |         const storedUser = localStorage.getItem('user');
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 41 |         setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 42 |     };
+     | ^^^^^^^ `checkAuth` is declared here
+  43 |
+  44 |     const login = async (credentials) => {
+  45 |         try {  react-hooks/immutability
+
+C:\Users\PCCS\OneDrive\Desktop\ICT EXPO\car-rental-booking\client\src\pages\CarDetails.jsx
+   5:41  error    'getStatusColor' is defined but never used. Allowed unused vars must match /^[A-Z_]/u                               no-unused-vars
+  32:8   warning  React Hook useEffect has a missing dependency: 'fetchCarDetails'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\PCCS\OneDrive\Desktop\ICT EXPO\car-rental-booking\client\src\pages\CarListing.jsx
+  27:8  warning  React Hook useEffect has a missing dependency: 'fetchCars'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\PCCS\OneDrive\Desktop\ICT EXPO\car-rental-booking\client\src\pages\Register.jsx
+  76:17  error  'confirmPassword' is assigned a value but never used. Allowed unused vars must match /^[A-Z_]/u  no-unused-vars
+
+C:\Users\PCCS\OneDrive\Desktop\ICT EXPO\car-rental-booking\client\src\utils\helpers.js
+  35:26  error  Unnecessary escape character: \.  no-useless-escape
+  35:42  error  Unnecessary escape character: \.  no-useless-escape
+
+Γ£û 8 problems (6 errors, 2 warnings)
+
