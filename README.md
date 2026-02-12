@@ -356,7 +356,6 @@ This project is licensed under the MIT License.
 - ImageKit for image optimization
 - React Router for navigation
 - Axios for HTTP requests
-- 
 ---
 
 **Happy Coding! 🚗💨**
