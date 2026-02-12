@@ -344,7 +344,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**ICT EXPO Project**
+**A.u.m.Ahsan**
 
 ## 🙏 Acknowledgments
 
@@ -356,11 +356,7 @@ This project is licensed under the MIT License.
 - ImageKit for image optimization
 - React Router for navigation
 - Axios for HTTP requests
-
-## 📞 Support
-
-For support, email your-email@example.com or open an issue in the repository.
-
+- 
 ---
 
 **Happy Coding! 🚗💨**
